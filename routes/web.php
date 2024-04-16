@@ -49,3 +49,4 @@ Route::patch('/msg/create',[TestController::class , 'create']);
 Route::post('/register', [UserController::class, 'register'])->name('register');
 
 
+Route::resource('person',PersonController::class);
