@@ -7,6 +7,7 @@ use App\Http\Controllers\resource1;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ChatBotController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +51,5 @@ Route::post('/register', [UserController::class, 'register'])->name('register');
 
 
 Route::resource('person',PersonController::class);
+
+Route::post('/send', [ChatBotController::class, 'sendChat']);

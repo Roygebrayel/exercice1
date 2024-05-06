@@ -16,7 +16,8 @@ class VerifyCsrfToken extends Middleware
         "message/*",
         "test/*",
         "test/create",
-        "/msg/create"
+        "/msg/create",
+        "send"
 
     ];
 }
